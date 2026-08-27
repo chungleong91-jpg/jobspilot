@@ -1,0 +1,18 @@
+// Cloudflare Pages config for this project.
+//
+// This file is read by:
+//   - `wrangler pages deploy` (CLI deploy, after `npm run build`)
+//   - the Pages "Connect to Git" build system
+//
+// It is NOT read by the Cloudflare dashboard's drag-and-drop
+// "Upload assets" flow — that flow only accepts a pre-built, static
+// folder and does not run `npm install` / `npm run build`, so it
+// rejects any project that has a wrangler config (since that usually
+// signals a build step is required). Use "Connect to Git" or the
+// `wrangler pages deploy` CLI command instead — see README.md.
+{
+  "$schema": "https://developers.cloudflare.com/pages/config/wrangler.jsonc",
+  "name": "jobspilot-singapore",
+  "compatibility_date": "2024-09-01",
+  "pages_build_output_dir": "dist"
+}
